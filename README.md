@@ -26,8 +26,8 @@ A simple web application that allows users to upload pdf files and merge them in
 - 4️⃣ The merged PDF will be automatically downloaded.
 
 ## 🔧 Setup (For Developers)
-- Clone the repository: `git clone https://github.com/amitesh786/ConvertPDF.git`
-- cd ConvertPdf
+- Clone the repository: `git clone https://github.com/amitesh786/PDF-Merger.git`
+- cd PDF-Merger
 - Open index.html in a browser and start using the tool!
 
 ## 📜 License
