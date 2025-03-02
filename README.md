@@ -25,6 +25,9 @@ A simple web application that allows users to upload pdf files and merge them in
 - 3️⃣ Click the **"Merge PDFs"** button to start processing.
 - 4️⃣ The merged PDF will be automatically downloaded.
 
+### 🎥 Demo
+<video src="PDF-Merger-Output.mp4" controls width="600"></video>
+
 ## 🔧 Setup (For Developers)
 - Clone the repository: `git clone https://github.com/amitesh786/PDF-Merger.git`
 - cd PDF-Merger
