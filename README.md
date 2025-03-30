@@ -1,5 +1,5 @@
 # 📄 PDF Merger
-A simple web application that allows users to upload pdf files and merge them into a single PDF using JavaScript and PDF-Lib.
+A simple web application that allows users to upload single/multiple pdf files and merge them into a single PDF using JavaScript and PDF-Lib.
 
 ## 🚀 Features
 - ✅ Merge multiple PDF files into a single PDF.
