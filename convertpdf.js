@@ -1,4 +1,4 @@
-function displayFileList() {
+const displayFileList = () => {
     const fileInput = document.getElementById('pdfUpload');
     const fileList = document.getElementById('fileList');
     
@@ -29,7 +29,7 @@ function displayFileList() {
     }
 }
 
-async function mergePDFs() {
+const mergePDFs = async () => {
     const fileInput = document.getElementById('pdfUpload');
     
     if (fileInput.files.length === 0) {
@@ -59,7 +59,7 @@ async function mergePDFs() {
     fileList.classList.add("d-none");
 }
 
-function downloadPDF(pdfBytes, fileName) {
+const downloadPDF = (pdfBytes, fileName) => {
     const blob = new Blob([pdfBytes], { type: 'application/pdf' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
