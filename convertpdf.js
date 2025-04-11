@@ -1,22 +1,35 @@
+const fileInput = document.getElementById('pdfUpload');
+const fileList = document.getElementById('fileList');
+const mergeButton = document.querySelector('.btn-success');
+mergeButton.disabled = true;
+
 const displayFileList = () => {
-    const fileInput = document.getElementById('pdfUpload');
-    const fileList = document.getElementById('fileList');
-    
     fileList.innerHTML = "";
+    mergeButton.disabled = true;
+    
     if (fileInput.files.length === 0) {
+        fileList.classList.add("d-none");
         return;
     }
+
+    fileList.classList.remove("d-none");
+    fileList.classList.add("d-block");
+    let hasValidFiles = false;
 
     for (const file of fileInput.files) {
         if (file.type !== "application/pdf") {
             alert(`Invalid file: "${file.name}". Please upload only PDF files.`);
             fileInput.value = "";
             fileList.innerHTML = "";
+            mergeButton.disabled = true;
             return;
         }
-        fileList.classList.remove("d-none");
-        fileList.classList.add("d-block");
+        hasValidFiles = true;
+
         const listItem = document.createElement('li');
+        listItem.className = "list-group-item d-flex justify-content-between align-items-center";
+        listItem.textContent = file.name;
+
         listItem.className = "list-group-item d-flex justify-content-between align-items-center";
         listItem.textContent = file.name;
 
@@ -27,11 +40,12 @@ const displayFileList = () => {
         listItem.appendChild(fileSize);
         fileList.appendChild(listItem);
     }
+    mergeButton.disabled = !hasValidFiles;
 }
 
+fileInput.addEventListener('change', displayFileList);
+
 const mergePDFs = async () => {
-    const fileInput = document.getElementById('pdfUpload');
-    
     if (fileInput.files.length === 0) {
         alert('Please select PDF files to merge.');
         return;
@@ -57,6 +71,7 @@ const mergePDFs = async () => {
     fileInput.value = "";
     fileList.innerHTML = "";
     fileList.classList.add("d-none");
+    mergeButton.disabled = true;
 }
 
 const downloadPDF = (pdfBytes, fileName) => {
