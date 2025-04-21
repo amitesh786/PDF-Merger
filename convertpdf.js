@@ -30,9 +30,6 @@ const displayFileList = () => {
         listItem.className = "list-group-item d-flex justify-content-between align-items-center";
         listItem.textContent = file.name;
 
-        listItem.className = "list-group-item d-flex justify-content-between align-items-center";
-        listItem.textContent = file.name;
-
         const fileSize = document.createElement('span');
         fileSize.className = "badge bg-primary rounded-pill";
         fileSize.textContent = `${(file.size / 1024).toFixed(2)} KB`;
