@@ -1,5 +1,5 @@
 # PDF Merger
-A simple web application that allows users to upload single/multiple pdf files and merge them into a single PDF using JavaScript and PDF-Lib.
+Select one or more PDF files using the file input or drag and drop them and merge them into a single PDF using JavaScript and PDF-Lib.
 
 ## Features
 - ✅ Merge multiple PDF files into a single PDF.
@@ -32,6 +32,12 @@ A simple web application that allows users to upload single/multiple pdf files a
 - Clone the repository: `git clone https://github.com/amitesh786/PDF-Merger.git`
 - cd PDF-Merger
 - Open index.html in a browser and start using the tool!
+
+## Browser Compatibility
+- ✅ Chrome
+- ✅ Firefox
+- ✅ Edge
+- ❌ Safari (limited support due to PDF-Lib limitations)
 
 ## License
 - This project is open-source and available under the MIT License.
