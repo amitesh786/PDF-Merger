@@ -1,6 +1,16 @@
 # PDF Merger
 Select one or more PDF files using the file input or drag and drop them and merge them into a single PDF using JavaScript and PDF-Lib.
 
+## Table of Contents
+- [Features](#Features)
+- [File-Structure](#File-Structure)
+- [Technologies-Used](#Technologies-Used)
+- [How-to-Use](#How-to-Use)
+- [Demo](#Demo)
+- [Setup](#Setup)
+- [Browser-Compatibility](#Browser-Compatibility)
+- [Author](#Author)
+
 ## Features
 - ✅ Merge multiple PDF files into a single PDF.
 - ✅ User-friendly interface built with Bootstrap.
@@ -8,18 +18,18 @@ Select one or more PDF files using the file input or drag and drop them and merg
 - ✅ Fast and lightweight solution.
 - ✅ Drag & drop support for easy file uploads.
 
-## File Structure
+## File-Structure
 - │── index.html           # Main HTML file
 - │── convertpdf.js        # JavaScript file for PDF conversion
 - │── index.css            # Stylesheet
 - │── README.md            # Project documentation
 
-## Technologies Used
+## Technologies-Used
 - **HTML5, CSS3, Bootstrap** – For a responsive UI.
 - **JavaScript (PDF-Lib.js)** – For merging PDF files.
 - **JS-PDF** – Additional PDF handling.
 
-## How to Use
+## How-to-Use
 - 1️⃣ Open index.html in a browser.
 - 2️⃣ Click on the file input and select one or more PDF files.
 - 3️⃣ Click the **"Merge PDFs"** button to start processing.
@@ -28,19 +38,16 @@ Select one or more PDF files using the file input or drag and drop them and merg
 ### Demo
 ![PDF Merger in Action](PDF-Merger-Output.gif)
 
-## Setup (For Developers)
+## Setup
 - Clone the repository: `git clone https://github.com/amitesh786/PDF-Merger.git`
 - cd PDF-Merger
 - Open index.html in a browser and start using the tool!
 
-## Browser Compatibility
+## Browser-Compatibility
 - ✅ Chrome
 - ✅ Firefox
 - ✅ Edge
 - ❌ Safari (limited support due to PDF-Lib limitations)
-
-## License
-- This project is open-source and available under the MIT License.
 
 ## Author
 - Developed by Amitesh Singh | © 2025
