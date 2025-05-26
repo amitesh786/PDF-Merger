@@ -12,11 +12,11 @@ Select one or more PDF files using the file input or drag and drop them and merg
 - [Author](#Author)
 
 ## Features
-- ✅ Merge multiple PDF files into a single PDF.
-- ✅ User-friendly interface built with Bootstrap.
-- ✅ Client-side processing – No server required.
-- ✅ Fast and lightweight solution.
-- ✅ Drag & drop support for easy file uploads.
+- Merge multiple PDF files into a single PDF.
+- User-friendly interface built with Bootstrap.
+- Client-side processing – No server required.
+- Fast and lightweight solution.
+- Drag & drop support for easy file uploads.
 
 ## File-Structure
 - │── index.html           # Main HTML file
@@ -30,10 +30,10 @@ Select one or more PDF files using the file input or drag and drop them and merg
 - **JS-PDF** – Additional PDF handling.
 
 ## How-to-Use
-- 1️⃣ Open index.html in a browser.
-- 2️⃣ Click on the file input and select one or more PDF files.
-- 3️⃣ Click the **"Merge PDFs"** button to start processing.
-- 4️⃣ The merged PDF will be automatically downloaded.
+- Open index.html in a browser.
+- Click on the file input and select one or more PDF files.
+- Click the **"Merge PDFs"** button to start processing.
+- The merged PDF will be automatically downloaded.
 
 ### Demo
 ![PDF Merger in Action](PDF-Merger-Output.gif)
@@ -44,11 +44,11 @@ Select one or more PDF files using the file input or drag and drop them and merg
 - Open index.html in a browser and start using the tool!
 
 ## Browser-Compatibility
-- ✅ Chrome
-- ✅ Firefox
-- ✅ Edge
-- ❌ Safari (limited support due to PDF-Lib limitations)
+- Chrome
+- Firefox
+- Edge
+- Safari (limited support due to PDF-Lib limitations (Not supported))
 
 ## Author
 - Developed by Amitesh Singh | © 2025
-- Feel free to contribute or suggest improvements! 🚀
+- Feel free to contribute or suggest improvements!
