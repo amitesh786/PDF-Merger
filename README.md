@@ -1,5 +1,5 @@
 # PDF Merger
-Select one or more PDF files using the file input or drag and drop them and merge them into a single PDF using JavaScript and PDF-Lib.
+Easily merge multiple PDF files into a single document directly within your browser using JavaScript and PDF-Lib.
 
 ## Table of Contents
 - [Features](#Features)
