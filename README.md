@@ -20,7 +20,7 @@ Easily merge multiple PDF files into a single document directly within your brow
 
 ## File-Structure
 - │── index.html           # Main HTML file
-- │── convertpdf.js        # JavaScript file for PDF conversion
+- │── index.js             # JavaScript file for PDF conversion
 - │── index.css            # Stylesheet
 - │── README.md            # Project documentation
 
