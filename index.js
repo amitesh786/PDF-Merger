@@ -3,6 +3,17 @@ const fileList = document.getElementById('fileList');
 const mergeButton = document.querySelector('.btn-success');
 mergeButton.disabled = true;
 
+function showToast(message, type = 'primary') {
+    const toastEl = document.getElementById('toastMessage');
+    const toastBody = toastEl.querySelector('.toast-body');
+
+    toastBody.textContent = message;
+    toastEl.className = `toast align-items-center text-bg-${type} border-0`;
+
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
+}
+
 const downloadPDF = (pdfBytes, fileName) => {
     const blob = new Blob([pdfBytes], { type: 'application/pdf' });
     const link = document.createElement('a');
@@ -13,7 +24,7 @@ const downloadPDF = (pdfBytes, fileName) => {
 
 const mergePDFs = async () => {
     if (fileInput.files.length === 0) {
-        alert('Please select PDF files to merge.');
+        showToast('Please select PDF files to merge', 'warning');
         return;
     }
     
@@ -21,7 +32,7 @@ const mergePDFs = async () => {
 
     for (const file of fileInput.files) {
         if (file.type !== "application/pdf") {
-            alert(`Invalid file: "${file.name}". Please upload only PDF files.`);
+            showToast(`Invalid file type: "${file.type}". Please upload only PDF files`, 'warning');
             return;
         }
 
@@ -33,6 +44,7 @@ const mergePDFs = async () => {
 
     const mergedPdfBytes = await mergedPdf.save();
     downloadPDF(mergedPdfBytes, 'merged.pdf');
+    showToast('PDF merged successfully!', 'success');
 
     fileInput.value = "";
     fileList.innerHTML = "";
@@ -55,7 +67,7 @@ const displayFileList = () => {
 
     for (const file of fileInput.files) {
         if (file.type !== "application/pdf") {
-            alert(`Invalid file: "${file.name}". Please upload only PDF files.`);
+            showToast(`Invalid file type: "${file.type}". Please upload only PDF files`, 'warning');
             fileInput.value = "";
             fileList.innerHTML = "";
             mergeButton.disabled = true;
